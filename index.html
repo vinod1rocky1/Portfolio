@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <!--custom stylesheets-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+        <!--header part-->
+         <header>
+		<div class="row">
+			<div class="col-md-6">
+                <!--Logo-->
+				<img class="title-logo img-responsive" height="100" width="100" src="img/udacity.svg" alt="logo">
+			</div>
+			<div class="col-md-6 text-right">
+				<h1 class="text-thin title-super">Vinod Kumar</h1>
+				<h3>Front-end Ninja</h3>
+		</div>
+		</div>
+    </header>
+    <hr class="custom-hr">
+    <!--header part ends-->
+    <!--main part begins-->
+        <div class="row">
+        	<div class="col-md-12">
+        		<img class="img-responsive" id="1" data-toggle="modal" data-target="#myModal" data-title="Slide" alt="puppy" src="img/2.jpg">
+        	</div>
+        </div>
+        <div class="row">
+        	<div class="col-md-12">
+        		<h2 class="text-muted">Featured Work</h2>
+        	</div>
+        </div>
+        <div class="row text-center">
+        	<div class="col-md-6">
+        		<img class="img-responsive my-img" id="2" data-toggle="modal" data-target="#myModal" data-title="Image1" src="http://placekitten.com/g/555/300" alt="kitty1">
+        		<h1>Appify</h1>
+        		<p><a href="">http://placekitten.com/g/555/300</a></p>
+        	</div>
+        	<div class="col-md-6 ">
+        		<img class="img-responsive" id="3" data-toggle="modal" data-target="#myModal" data-title="Image2" src="http://placekitten.com/g/555/300" alt="kitty2">
+        		<h1>Kitty</h1>
+        		<p><a href="">http://placekitten.com/g/555/300</a></p>
+        	</div>
+        </div>
+        <div class="row text-center ">
+        	<div class="col-md-6">
+        		<img class="img-responsive my-img" id="4" data-toggle="modal" data-target="#myModal" data-title="Image3" src="http://placekitten.com/g/555/300" alt="kitty3">
+        		<h1>Appify</h1>
+        		<p><a href="">http://placekitten.com/g/555/300</a></p>
+        	</div>
+        	<div class="col-md-6">
+        		<img class="img-responsive" id="5" data-toggle="modal" data-target="#myModal" data-title="Image4" src="http://placekitten.com/g/555/300" alt="kitty4">
+        		<h1>Kitty</h1>
+        		<p><a href="">http://placekitten.com/g/555/300</a></p>
+        	</div>
+        </div>
+	</div>
+    <!--main part ends-->
+<!--Using Bootstrap Modal -->
+    <div id="myModal" class="modal fade">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title text-center">Image View</h4>
+            </div>
+            <div class="modal-body" id="showImg">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Javascript function for bootstrap modal-->
+<script>
+      $(document).ready(function() {
+        $('img').on('click', function() {
+          $("#showImg").empty();
+          var image = $(this).attr("src");
+          $("#showImg").append("<img class='img-responsive' src='" + image + "' />")
+          //alert(image);
+        })
+      });
+</script>
+<!--Footer part begins-->
+<footer class="page-footer stylish-color-dark pt-4 mt-4">
+    <div class="container">
+        <div class="row">
+            <!-- Copyright -->
+            <div class="footer-copyright text-center">© 2018 Copyright: Vinod Kumar
+        </div>
+        </div>
+    </div>
+    </footer>
+    <!--Footer part ends-->
+</body>
+</html>

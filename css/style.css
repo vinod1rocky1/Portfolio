@@ -1,0 +1,66 @@
+body{
+  color: #2d3c49;
+  font-weight:300;
+}
+
+.text-muted{
+	color: #bcbbbb;
+}
+
+.text-thin{
+	font-weight: 100;
+  font-family: 'Indie Flower', cursive;
+}
+
+.title-super{
+	font-size: 70px;
+}
+
+.title-logo{
+	margin-top: 20px;
+}
+
+.modal-body{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.modal-lg{
+  width: 100%;
+}
+
+.my-img a {
+  display: inline-block;
+  margin: 10px;
+  border: 2px solid #ccc;
+}
+
+.my-img a:hover {
+  border: 2px solid #45afff;
+}
+
+h1,h3{
+  text-transform: uppercase;
+}
+footer.page-footer .footer-copyright {
+    overflow: hidden;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 368px){
+  .title-super {
+    font-size: 50px;
+  }
+}
+
+.custom-hr{
+  display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #7d97ad;
+}
