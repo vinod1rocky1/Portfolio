@@ -82,17 +82,6 @@
         </div>
     </div>
 </div>
-<!--Javascript function for bootstrap modal-->
-<script>
-      $(document).ready(function() {
-        $('img').on('click', function() {
-          $("#showImg").empty();
-          var image = $(this).attr("src");
-          $("#showImg").append("<img class='img-responsive' src='" + image + "' />")
-          //alert(image);
-        })
-      });
-</script>
 <!--Footer part begins-->
 <footer class="page-footer stylish-color-dark pt-4 mt-4">
     <div class="container">
@@ -104,5 +93,16 @@
     </div>
     </footer>
     <!--Footer part ends-->
+	<!--Javascript function for bootstrap modal-->
+<script>
+      $(document).ready(function() {
+        $('img').on('click', function() {
+          $("#showImg").empty();
+          var image = $(this).attr("src");
+          $("#showImg").append("<img class='img-responsive' src='" + image + "' />")
+          //alert(image);
+        })
+      });
+</script>
 </body>
 </html>
